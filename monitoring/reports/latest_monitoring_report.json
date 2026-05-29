@@ -1,0 +1,141 @@
+{
+  "generated_at_utc": "2026-05-29T11:45:05.523946+00:00",
+  "reference_data": "C:\\Users\\leona\\Desktop\\GitHub Action Testing\\GitHub-Action-Testing\\train\\train.csv",
+  "current_data": "C:\\Users\\leona\\Desktop\\GitHub Action Testing\\GitHub-Action-Testing\\data\\new_data.csv",
+  "data_quality": {
+    "rows": 100,
+    "columns": 17,
+    "duplicate_rows": 0,
+    "missing_rates": {
+      "Gender": 0.0,
+      "Age": 0.0,
+      "Height": 0.0,
+      "Weight": 0.0,
+      "family_history_with_overweight": 0.0,
+      "FAVC": 0.0,
+      "FCVC": 0.0,
+      "NCP": 0.0,
+      "CAEC": 0.0,
+      "SMOKE": 0.0,
+      "CH2O": 0.0,
+      "SCC": 0.0,
+      "FAF": 0.0,
+      "TUE": 0.0,
+      "CALC": 0.0,
+      "MTRANS": 0.0,
+      "NObeyesdad": 0.0
+    },
+    "columns_above_missing_threshold": []
+  },
+  "numeric_drift": {
+    "Age": {
+      "test": "kolmogorov_smirnov",
+      "statistic": 0.05637102234258632,
+      "pvalue": 0.9095916306257747,
+      "drift_detected": false
+    },
+    "Height": {
+      "test": "kolmogorov_smirnov",
+      "statistic": 0.06273527420446852,
+      "pvalue": 0.8304970231642848,
+      "drift_detected": false
+    },
+    "Weight": {
+      "test": "kolmogorov_smirnov",
+      "statistic": 0.0664793500338524,
+      "pvalue": 0.7753444300489034,
+      "drift_detected": false
+    },
+    "FCVC": {
+      "test": "kolmogorov_smirnov",
+      "statistic": 0.07809749492213947,
+      "pvalue": 0.5881214463399016,
+      "drift_detected": false
+    },
+    "NCP": {
+      "test": "kolmogorov_smirnov",
+      "statistic": 0.0799322951929587,
+      "pvalue": 0.5586431863541645,
+      "drift_detected": false
+    },
+    "CH2O": {
+      "test": "kolmogorov_smirnov",
+      "statistic": 0.14084631008801624,
+      "pvalue": 0.043771376299400956,
+      "drift_detected": true
+    },
+    "FAF": {
+      "test": "kolmogorov_smirnov",
+      "statistic": 0.08626269465132025,
+      "pvalue": 0.46161255273726115,
+      "drift_detected": false
+    },
+    "TUE": {
+      "test": "kolmogorov_smirnov",
+      "statistic": 0.07105619498984428,
+      "pvalue": 0.7028786005903536,
+      "drift_detected": false
+    }
+  },
+  "categorical_drift": {
+    "Gender": {
+      "test": "chi_square",
+      "statistic": 0.9397380902598189,
+      "pvalue": 0.33234520724005256,
+      "drift_detected": false
+    },
+    "family_history_with_overweight": {
+      "test": "chi_square",
+      "statistic": 0.26832978399756624,
+      "pvalue": 0.6044543740422602,
+      "drift_detected": false
+    },
+    "FAVC": {
+      "test": "chi_square",
+      "statistic": 0.0022021505376344204,
+      "pvalue": 0.9625713476905862,
+      "drift_detected": false
+    },
+    "CAEC": {
+      "test": "chi_square",
+      "statistic": 0.22365305523336443,
+      "pvalue": 0.9736834786951645,
+      "drift_detected": false
+    },
+    "SMOKE": {
+      "test": "chi_square",
+      "statistic": 0.21665667930373805,
+      "pvalue": 0.6415992546118344,
+      "drift_detected": false
+    },
+    "SCC": {
+      "test": "chi_square",
+      "statistic": 2.9214887356914296,
+      "pvalue": 0.08740718701812722,
+      "drift_detected": false
+    },
+    "CALC": {
+      "test": "chi_square",
+      "statistic": 0.6877734617813265,
+      "pvalue": 0.8760759170874497,
+      "drift_detected": false
+    },
+    "MTRANS": {
+      "test": "chi_square",
+      "statistic": 4.329164387965202,
+      "pvalue": 0.36328735172516824,
+      "drift_detected": false
+    }
+  },
+  "performance": {
+    "available": false,
+    "reason": "New data labels or model artefacts are unavailable."
+  },
+  "summary": {
+    "drifted_features": 1,
+    "monitoring_status": "alert"
+  },
+  "alerts": [
+    "Drift detected in: CH2O"
+  ]
+}

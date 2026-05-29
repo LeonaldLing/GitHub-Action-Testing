@@ -1,0 +1,50 @@
+stages:
+  preprocess:
+    cmd: python src/preprocess_new_data.py --input data/ObesityDatasetRaw.csv --new-data data/new_data.csv
+    deps:
+      - src/preprocess_new_data.py
+      - data/ObesityDatasetRaw.csv
+      - data/new_data.csv
+      - params.yaml
+    outs:
+      - train/train.csv
+      - test/test.csv
+      - artifacts/data/X_train.npy
+      - artifacts/data/X_test.npy
+      - artifacts/data/y_train.npy
+      - artifacts/data/y_test.npy
+      - artifacts/data/X_new.npy
+      - artifacts/data/y_new.npy
+      - artifacts/preprocessing/preprocessor.pkl
+      - artifacts/preprocessing/label_encoder.pkl
+      - artifacts/preprocessing/feature_columns.json
+
+  monitor:
+    cmd: python src/monitor.py
+    deps:
+      - src/monitor.py
+      - train/train.csv
+      - data/new_data.csv
+      - artifacts/data/X_new.npy
+      - artifacts/data/y_new.npy
+      - params.yaml
+    outs:
+      - artifacts/metrics/monitoring_metrics.json
+      - reports/drift_report.json
+      - reports/monitoring_dashboard.html
+      - retrain_needed.txt
+      - drift_status.txt
+  
+  train:
+    cmd: python src/model.py
+    deps:
+      - src/model.py
+      - artifacts/data/X_train.npy
+      - artifacts/data/y_train.npy
+      - artifacts/data/X_test.npy
+      - artifacts/data/y_test.npy
+      - artifacts/metrics/monitoring_metrics.json
+      - params.yaml
+    outs:
+      - artifacts/models/random_forest_model.pkl
+      - artifacts/metrics/training_history.json

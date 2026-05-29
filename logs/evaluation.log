@@ -1,0 +1,5 @@
+2026-05-29 18:55:05,706 - evaluation - INFO - ======================================================================
+2026-05-29 18:55:05,706 - evaluation - INFO - EVALUATING RANDOM FOREST OBESITY CLASSIFIER
+2026-05-29 18:55:05,706 - evaluation - INFO - ======================================================================
+2026-05-29 18:55:05,901 - evaluation - INFO - Saved evaluation metrics
+2026-05-29 18:55:05,901 - evaluation - INFO - Accuracy: 0.9353

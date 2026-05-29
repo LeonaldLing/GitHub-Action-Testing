@@ -1,0 +1,7 @@
+{
+  "retrain_needed": true,
+  "reason": [
+    "Drift detected in: CH2O"
+  ],
+  "generated_at_utc": "2026-05-29T11:45:05.523946+00:00"
+}

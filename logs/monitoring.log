@@ -1,0 +1,196 @@
+2026-05-29 18:41:46,196 - preprocessing - INFO - ======================================================================
+2026-05-29 18:41:46,196 - preprocessing - INFO - PREPROCESSING OBESITY TRAINING DATA
+2026-05-29 18:41:46,196 - preprocessing - INFO - ======================================================================
+2026-05-29 18:41:46,196 - preprocessing - INFO - Loading raw obesity dataset from data\ObesityDatasetRaw.csv
+2026-05-29 18:41:46,215 - preprocessing - INFO - Loaded raw dataset with shape (2111, 17)
+2026-05-29 18:41:46,216 - preprocessing - INFO - Preparing categorical and ordinal obesity features
+2026-05-29 18:41:46,224 - preprocessing - INFO - Using 12 model feature columns after replacing 7 source columns with engineered features
+2026-05-29 18:41:46,227 - preprocessing - INFO - Encoded target classes: ['Insufficient_Weight', 'Normal_Weight', 'Obesity_Type_I', 'Obesity_Type_II', 'Obesity_Type_III', 'Overweight_Level_I', 'Overweight_Level_II']
+2026-05-29 18:41:46,227 - preprocessing - INFO - Configured preprocessing transformers: ['standard', 'robust', 'minmax', 'binary', 'nominal']
+2026-05-29 18:41:46,227 - preprocessing - INFO - Fitting preprocessing pipeline
+2026-05-29 18:41:46,243 - preprocessing - INFO - Processed feature matrix shape: (2111, 15)
+2026-05-29 18:41:46,243 - preprocessing - INFO - Splitting data with test_size=0.3 and random_seed=42
+2026-05-29 18:41:46,250 - preprocessing - INFO - Saving train/test CSV files
+2026-05-29 18:41:46,267 - preprocessing - INFO - Saving processed numpy arrays to artifacts/data
+2026-05-29 18:41:46,276 - preprocessing - INFO - Saving preprocessing metadata and fitted encoders
+2026-05-29 18:41:46,278 - preprocessing - INFO - Preprocessing complete
+2026-05-29 18:41:46,278 - preprocessing - INFO - Input rows: 2111
+2026-05-29 18:41:46,278 - preprocessing - INFO - Training rows: 1477
+2026-05-29 18:41:46,278 - preprocessing - INFO - Test rows: 634
+2026-05-29 18:41:46,278 - preprocessing - INFO - Processed training shape: (1477, 15)
+2026-05-29 18:41:46,278 - preprocessing - INFO - Processed test shape: (634, 15)
+2026-05-29 18:41:46,279 - preprocessing - INFO - ======================================================================
+2026-05-29 18:41:46,279 - preprocessing - INFO - PREPROCESSING OPTIONAL NEW DATA
+2026-05-29 18:41:46,279 - preprocessing - INFO - ======================================================================
+2026-05-29 18:41:46,279 - preprocessing - INFO - Looking for new data at data\new_data.csv
+2026-05-29 18:41:46,280 - preprocessing - INFO - Loading fitted preprocessor from artifacts/preprocessing/preprocessor.pkl
+2026-05-29 18:41:46,297 - preprocessing - INFO - Loading new data from data\new_data.csv
+2026-05-29 18:41:46,299 - preprocessing - INFO - Loaded new data with shape (100, 17)
+2026-05-29 18:41:46,299 - preprocessing - INFO - New data includes target column: True
+2026-05-29 18:41:46,302 - preprocessing - INFO - Transforming new data with fitted preprocessing pipeline
+2026-05-29 18:41:46,310 - preprocessing - INFO - Saved new feature array to artifacts/data/X_new.npy with shape (100, 15)
+2026-05-29 18:41:46,310 - preprocessing - INFO - Encoding and saving new data labels
+2026-05-29 18:41:46,337 - preprocessing - INFO - Saved new labels to artifacts/data/y_new.npy with shape (100,)
+2026-05-29 18:41:46,337 - preprocessing - INFO - New data preprocessing complete
+2026-05-29 18:41:46,337 - preprocessing - INFO - New rows: 100
+2026-05-29 18:41:46,337 - preprocessing - INFO - Processed new data shape: (100, 15)
+2026-05-29 18:50:50,993 - preprocessing - INFO - ======================================================================
+2026-05-29 18:50:50,993 - preprocessing - INFO - PREPROCESSING OBESITY TRAINING DATA
+2026-05-29 18:50:50,993 - preprocessing - INFO - ======================================================================
+2026-05-29 18:50:50,993 - preprocessing - INFO - Loading raw obesity dataset from data\ObesityDatasetRaw.csv
+2026-05-29 18:50:51,011 - preprocessing - INFO - Loaded raw dataset with shape (2111, 17)
+2026-05-29 18:50:51,012 - preprocessing - INFO - Preparing categorical and ordinal obesity features
+2026-05-29 18:50:51,020 - preprocessing - INFO - Using 12 model feature columns after replacing 7 source columns with engineered features
+2026-05-29 18:50:51,023 - preprocessing - INFO - Encoded target classes: ['Insufficient_Weight', 'Normal_Weight', 'Obesity_Type_I', 'Obesity_Type_II', 'Obesity_Type_III', 'Overweight_Level_I', 'Overweight_Level_II']
+2026-05-29 18:50:51,023 - preprocessing - INFO - Configured preprocessing transformers: ['standard', 'robust', 'minmax', 'binary', 'nominal']
+2026-05-29 18:50:51,023 - preprocessing - INFO - Fitting preprocessing pipeline
+2026-05-29 18:50:51,035 - preprocessing - INFO - Processed feature matrix shape: (2111, 15)
+2026-05-29 18:50:51,035 - preprocessing - INFO - Splitting data with test_size=0.3 and random_seed=42
+2026-05-29 18:50:51,041 - preprocessing - INFO - Saving train/test CSV files
+2026-05-29 18:50:51,057 - preprocessing - INFO - Saving processed numpy arrays to artifacts/data
+2026-05-29 18:50:51,062 - preprocessing - INFO - Saving preprocessing metadata and fitted encoders
+2026-05-29 18:50:51,063 - preprocessing - INFO - Preprocessing complete
+2026-05-29 18:50:51,063 - preprocessing - INFO - Input rows: 2111
+2026-05-29 18:50:51,063 - preprocessing - INFO - Training rows: 1477
+2026-05-29 18:50:51,063 - preprocessing - INFO - Test rows: 634
+2026-05-29 18:50:51,063 - preprocessing - INFO - Processed training shape: (1477, 15)
+2026-05-29 18:50:51,064 - preprocessing - INFO - Processed test shape: (634, 15)
+2026-05-29 18:50:51,064 - preprocessing - INFO - ======================================================================
+2026-05-29 18:50:51,064 - preprocessing - INFO - PREPROCESSING OPTIONAL NEW DATA
+2026-05-29 18:50:51,064 - preprocessing - INFO - ======================================================================
+2026-05-29 18:50:51,064 - preprocessing - INFO - Looking for new data at data\new_data.csv
+2026-05-29 18:50:51,064 - preprocessing - INFO - Loading fitted preprocessor from artifacts/preprocessing/preprocessor.pkl
+2026-05-29 18:50:51,100 - preprocessing - INFO - Loading new data from data\new_data.csv
+2026-05-29 18:50:51,101 - preprocessing - INFO - Loaded new data with shape (100, 17)
+2026-05-29 18:50:51,101 - preprocessing - INFO - New data includes target column: True
+2026-05-29 18:50:51,105 - preprocessing - INFO - Transforming new data with fitted preprocessing pipeline
+2026-05-29 18:50:51,109 - preprocessing - INFO - Saved new feature array to artifacts/data/X_new.npy with shape (100, 15)
+2026-05-29 18:50:51,110 - preprocessing - INFO - Encoding and saving new data labels
+2026-05-29 18:50:51,143 - preprocessing - INFO - Saved new labels to artifacts/data/y_new.npy with shape (100,)
+2026-05-29 18:50:51,143 - preprocessing - INFO - New data preprocessing complete
+2026-05-29 18:50:51,143 - preprocessing - INFO - New rows: 100
+2026-05-29 18:50:51,143 - preprocessing - INFO - Processed new data shape: (100, 15)
+2026-05-29 21:38:21,482 - monitoring - INFO - ======================================================================
+2026-05-29 21:38:21,483 - monitoring - INFO - STARTING OBESITY DATA MONITORING
+2026-05-29 21:38:21,483 - monitoring - INFO - ======================================================================
+2026-05-29 21:38:21,483 - monitoring - INFO - Thresholds: ks=0.05 chi_square=0.05 missing_rate=0.05 accuracy=0.75
+2026-05-29 21:38:21,484 - monitoring - INFO - Loading reference data from C:\Users\leona\Desktop\GitHub Action Testing\GitHub-Action-Testing\train\train.csv
+2026-05-29 21:38:21,832 - monitoring - INFO - Reference data shape: (1477, 17)
+2026-05-29 21:38:21,833 - monitoring - INFO - Loading current data from C:\Users\leona\Desktop\GitHub Action Testing\GitHub-Action-Testing\data\new_data.csv
+2026-05-29 21:38:21,834 - monitoring - INFO - Current data shape: (100, 17)
+2026-05-29 21:38:21,878 - monitoring - INFO - Common monitoring columns: 16
+2026-05-29 21:38:21,878 - monitoring - INFO - Numeric columns: ['Age', 'Height', 'Weight', 'FCVC', 'NCP', 'CH2O', 'FAF', 'TUE']
+2026-05-29 21:38:21,878 - monitoring - INFO - Categorical columns: ['Gender', 'family_history_with_overweight', 'FAVC', 'CAEC', 'SMOKE', 'SCC', 'CALC', 'MTRANS']
+2026-05-29 21:38:21,878 - monitoring - INFO - Checking data quality
+2026-05-29 21:38:22,026 - monitoring - INFO - Data quality summary: rows=100 columns=17 duplicate_rows=0
+2026-05-29 21:38:22,026 - monitoring - INFO - Running numeric drift checks on 8 columns
+2026-05-29 21:38:22,114 - monitoring - INFO - Numeric drift ok for Age (pvalue=0.909592)
+2026-05-29 21:38:22,115 - monitoring - INFO - Numeric drift ok for Height (pvalue=0.830497)
+2026-05-29 21:38:22,116 - monitoring - INFO - Numeric drift ok for Weight (pvalue=0.775344)
+2026-05-29 21:38:22,116 - monitoring - INFO - Numeric drift ok for FCVC (pvalue=0.588121)
+2026-05-29 21:38:22,117 - monitoring - INFO - Numeric drift ok for NCP (pvalue=0.558643)
+2026-05-29 21:38:22,118 - monitoring - WARNING - Numeric drift detected for CH2O (pvalue=0.043771)
+2026-05-29 21:38:22,118 - monitoring - INFO - Numeric drift ok for FAF (pvalue=0.461613)
+2026-05-29 21:38:22,119 - monitoring - INFO - Numeric drift ok for TUE (pvalue=0.702879)
+2026-05-29 21:38:22,119 - monitoring - INFO - Running categorical drift checks on 8 columns
+2026-05-29 21:38:22,169 - monitoring - INFO - Categorical drift ok for Gender (pvalue=0.332345)
+2026-05-29 21:38:22,171 - monitoring - INFO - Categorical drift ok for family_history_with_overweight (pvalue=0.604454)
+2026-05-29 21:38:22,172 - monitoring - INFO - Categorical drift ok for FAVC (pvalue=0.962571)
+2026-05-29 21:38:22,173 - monitoring - INFO - Categorical drift ok for CAEC (pvalue=0.973683)
+2026-05-29 21:38:22,174 - monitoring - INFO - Categorical drift ok for SMOKE (pvalue=0.641599)
+2026-05-29 21:38:22,174 - monitoring - INFO - Categorical drift ok for SCC (pvalue=0.087407)
+2026-05-29 21:38:22,186 - monitoring - INFO - Categorical drift ok for CALC (pvalue=0.876076)
+2026-05-29 21:38:22,187 - monitoring - INFO - Categorical drift ok for MTRANS (pvalue=0.363287)
+2026-05-29 21:38:22,187 - monitoring - WARNING - Drift detected in features: ['CH2O']
+2026-05-29 21:38:22,187 - monitoring - INFO - Checking whether labelled new-data performance can be calculated
+2026-05-29 21:38:22,187 - monitoring - INFO - Skipping new-data performance check: New data labels or model artefacts are unavailable.
+2026-05-29 21:38:22,188 - monitoring - INFO - Saved monitoring metrics to artifacts/metrics/monitoring_metrics.json
+2026-05-29 21:38:22,189 - monitoring - INFO - Saved drift report to reports/drift_report.json
+2026-05-29 21:38:22,190 - monitoring - INFO - Saved latest monitoring report to monitoring/reports/latest_monitoring_report.json
+2026-05-29 21:38:22,190 - monitoring - INFO - Writing monitoring dashboard HTML
+2026-05-29 21:38:22,192 - monitoring - INFO - Saved retrain_needed.txt with value: true
+2026-05-29 21:38:22,192 - monitoring - INFO - Saved drift_status.txt with value: true
+2026-05-29 21:38:22,192 - monitoring - INFO - Saved retraining trigger metadata to artifacts/metadata/retraining_trigger.json
+2026-05-29 21:38:22,193 - monitoring - WARNING - Saved alert history to C:\Users\leona\Desktop\GitHub Action Testing\GitHub-Action-Testing\monitoring\alerts\alerts-20260529113822.json
+2026-05-29 21:38:22,194 - monitoring - INFO - Saved drift detection log to logs/drift_detection.log
+2026-05-29 21:38:22,194 - monitoring - INFO - Monitoring complete for C:\Users\leona\Desktop\GitHub Action Testing\GitHub-Action-Testing\data\new_data.csv with status alert
+2026-05-29 21:45:03,117 - preprocessing - INFO - ======================================================================
+2026-05-29 21:45:03,117 - preprocessing - INFO - PREPROCESSING OBESITY TRAINING DATA
+2026-05-29 21:45:03,117 - preprocessing - INFO - ======================================================================
+2026-05-29 21:45:03,117 - preprocessing - INFO - Loading raw obesity dataset from data\ObesityDatasetRaw.csv
+2026-05-29 21:45:03,124 - preprocessing - INFO - Loaded raw dataset with shape (2111, 17)
+2026-05-29 21:45:03,125 - preprocessing - INFO - Preparing categorical and ordinal obesity features
+2026-05-29 21:45:03,134 - preprocessing - INFO - Using 12 model feature columns after replacing 7 source columns with engineered features
+2026-05-29 21:45:03,136 - preprocessing - INFO - Encoded target classes: ['Insufficient_Weight', 'Normal_Weight', 'Obesity_Type_I', 'Obesity_Type_II', 'Obesity_Type_III', 'Overweight_Level_I', 'Overweight_Level_II']
+2026-05-29 21:45:03,136 - preprocessing - INFO - Configured preprocessing transformers: ['standard', 'robust', 'minmax', 'binary', 'nominal']
+2026-05-29 21:45:03,136 - preprocessing - INFO - Fitting preprocessing pipeline
+2026-05-29 21:45:03,148 - preprocessing - INFO - Processed feature matrix shape: (2111, 15)
+2026-05-29 21:45:03,148 - preprocessing - INFO - Splitting data with test_size=0.3 and random_seed=42
+2026-05-29 21:45:03,154 - preprocessing - INFO - Saving train/test CSV files
+2026-05-29 21:45:03,170 - preprocessing - INFO - Saving processed numpy arrays to artifacts/data
+2026-05-29 21:45:03,175 - preprocessing - INFO - Saving preprocessing metadata and fitted encoders
+2026-05-29 21:45:03,176 - preprocessing - INFO - Preprocessing complete
+2026-05-29 21:45:03,177 - preprocessing - INFO - Input rows: 2111
+2026-05-29 21:45:03,177 - preprocessing - INFO - Training rows: 1477
+2026-05-29 21:45:03,177 - preprocessing - INFO - Test rows: 634
+2026-05-29 21:45:03,177 - preprocessing - INFO - Processed training shape: (1477, 15)
+2026-05-29 21:45:03,177 - preprocessing - INFO - Processed test shape: (634, 15)
+2026-05-29 21:45:03,177 - preprocessing - INFO - ======================================================================
+2026-05-29 21:45:03,178 - preprocessing - INFO - PREPROCESSING OPTIONAL NEW DATA
+2026-05-29 21:45:03,178 - preprocessing - INFO - ======================================================================
+2026-05-29 21:45:03,178 - preprocessing - INFO - Looking for new data at data\new_data.csv
+2026-05-29 21:45:03,178 - preprocessing - INFO - Loading fitted preprocessor from artifacts/preprocessing/preprocessor.pkl
+2026-05-29 21:45:03,179 - preprocessing - INFO - Loading new data from data\new_data.csv
+2026-05-29 21:45:03,180 - preprocessing - INFO - Loaded new data with shape (100, 17)
+2026-05-29 21:45:03,181 - preprocessing - INFO - New data includes target column: True
+2026-05-29 21:45:03,184 - preprocessing - INFO - Transforming new data with fitted preprocessing pipeline
+2026-05-29 21:45:03,190 - preprocessing - INFO - Saved new feature array to artifacts/data/X_new.npy with shape (100, 15)
+2026-05-29 21:45:03,190 - preprocessing - INFO - Encoding and saving new data labels
+2026-05-29 21:45:03,211 - preprocessing - INFO - Saved new labels to artifacts/data/y_new.npy with shape (100,)
+2026-05-29 21:45:03,211 - preprocessing - INFO - New data preprocessing complete
+2026-05-29 21:45:03,211 - preprocessing - INFO - New rows: 100
+2026-05-29 21:45:03,212 - preprocessing - INFO - Processed new data shape: (100, 15)
+2026-05-29 21:45:05,496 - monitoring - INFO - ======================================================================
+2026-05-29 21:45:05,496 - monitoring - INFO - STARTING OBESITY DATA MONITORING
+2026-05-29 21:45:05,496 - monitoring - INFO - ======================================================================
+2026-05-29 21:45:05,496 - monitoring - INFO - Thresholds: ks=0.05 chi_square=0.05 missing_rate=0.05 accuracy=0.75
+2026-05-29 21:45:05,496 - monitoring - INFO - Loading reference data from C:\Users\leona\Desktop\GitHub Action Testing\GitHub-Action-Testing\train\train.csv
+2026-05-29 21:45:05,520 - monitoring - INFO - Reference data shape: (1477, 17)
+2026-05-29 21:45:05,520 - monitoring - INFO - Loading current data from C:\Users\leona\Desktop\GitHub Action Testing\GitHub-Action-Testing\data\new_data.csv
+2026-05-29 21:45:05,522 - monitoring - INFO - Current data shape: (100, 17)
+2026-05-29 21:45:05,523 - monitoring - INFO - Common monitoring columns: 16
+2026-05-29 21:45:05,523 - monitoring - INFO - Numeric columns: ['Age', 'Height', 'Weight', 'FCVC', 'NCP', 'CH2O', 'FAF', 'TUE']
+2026-05-29 21:45:05,523 - monitoring - INFO - Categorical columns: ['Gender', 'family_history_with_overweight', 'FAVC', 'CAEC', 'SMOKE', 'SCC', 'CALC', 'MTRANS']
+2026-05-29 21:45:05,523 - monitoring - INFO - Checking data quality
+2026-05-29 21:45:05,525 - monitoring - INFO - Data quality summary: rows=100 columns=17 duplicate_rows=0
+2026-05-29 21:45:05,525 - monitoring - INFO - Running numeric drift checks on 8 columns
+2026-05-29 21:45:05,528 - monitoring - INFO - Numeric drift ok for Age (pvalue=0.909592)
+2026-05-29 21:45:05,528 - monitoring - INFO - Numeric drift ok for Height (pvalue=0.830497)
+2026-05-29 21:45:05,529 - monitoring - INFO - Numeric drift ok for Weight (pvalue=0.775344)
+2026-05-29 21:45:05,530 - monitoring - INFO - Numeric drift ok for FCVC (pvalue=0.588121)
+2026-05-29 21:45:05,531 - monitoring - INFO - Numeric drift ok for NCP (pvalue=0.558643)
+2026-05-29 21:45:05,532 - monitoring - WARNING - Numeric drift detected for CH2O (pvalue=0.043771)
+2026-05-29 21:45:05,533 - monitoring - INFO - Numeric drift ok for FAF (pvalue=0.461613)
+2026-05-29 21:45:05,534 - monitoring - INFO - Numeric drift ok for TUE (pvalue=0.702879)
+2026-05-29 21:45:05,534 - monitoring - INFO - Running categorical drift checks on 8 columns
+2026-05-29 21:45:05,536 - monitoring - INFO - Categorical drift ok for Gender (pvalue=0.332345)
+2026-05-29 21:45:05,537 - monitoring - INFO - Categorical drift ok for family_history_with_overweight (pvalue=0.604454)
+2026-05-29 21:45:05,539 - monitoring - INFO - Categorical drift ok for FAVC (pvalue=0.962571)
+2026-05-29 21:45:05,540 - monitoring - INFO - Categorical drift ok for CAEC (pvalue=0.973683)
+2026-05-29 21:45:05,541 - monitoring - INFO - Categorical drift ok for SMOKE (pvalue=0.641599)
+2026-05-29 21:45:05,542 - monitoring - INFO - Categorical drift ok for SCC (pvalue=0.087407)
+2026-05-29 21:45:05,544 - monitoring - INFO - Categorical drift ok for CALC (pvalue=0.876076)
+2026-05-29 21:45:05,544 - monitoring - INFO - Categorical drift ok for MTRANS (pvalue=0.363287)
+2026-05-29 21:45:05,545 - monitoring - WARNING - Drift detected in features: ['CH2O']
+2026-05-29 21:45:05,545 - monitoring - INFO - Checking whether labelled new-data performance can be calculated
+2026-05-29 21:45:05,545 - monitoring - INFO - Skipping new-data performance check: New data labels or model artefacts are unavailable.
+2026-05-29 21:45:05,547 - monitoring - INFO - Saved monitoring metrics to artifacts/metrics/monitoring_metrics.json
+2026-05-29 21:45:05,548 - monitoring - INFO - Saved drift report to reports/drift_report.json
+2026-05-29 21:45:05,549 - monitoring - INFO - Saved latest monitoring report to monitoring/reports/latest_monitoring_report.json
+2026-05-29 21:45:05,549 - monitoring - INFO - Writing monitoring dashboard HTML
+2026-05-29 21:45:05,551 - monitoring - INFO - Saved retrain_needed.txt with value: true
+2026-05-29 21:45:05,551 - monitoring - INFO - Saved drift_status.txt with value: true
+2026-05-29 21:45:05,552 - monitoring - INFO - Saved retraining trigger metadata to artifacts/metadata/retraining_trigger.json
+2026-05-29 21:45:05,552 - monitoring - WARNING - Saved alert history to C:\Users\leona\Desktop\GitHub Action Testing\GitHub-Action-Testing\monitoring\alerts\alerts-20260529114505.json
+2026-05-29 21:45:05,553 - monitoring - INFO - Saved drift detection log to logs/drift_detection.log
+2026-05-29 21:45:05,553 - monitoring - INFO - Monitoring complete for C:\Users\leona\Desktop\GitHub Action Testing\GitHub-Action-Testing\data\new_data.csv with status alert

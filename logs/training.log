@@ -1,0 +1,16 @@
+2026-05-29 18:50:53,750 - training - INFO - ======================================================================
+2026-05-29 18:50:53,751 - training - INFO - TRAINING RANDOM FOREST OBESITY CLASSIFIER
+2026-05-29 18:50:53,751 - training - INFO - ======================================================================
+2026-05-29 18:50:53,781 - training - INFO - Loaded X_train=(1477, 15) y_train=(1477,)
+2026-05-29 18:50:53,781 - training - INFO - Loaded X_test=(634, 15) y_test=(634,)
+2026-05-29 18:50:53,781 - training - INFO - Fitting Random Forest model
+2026-05-29 18:50:54,292 - training - INFO - Saved model to C:\Users\leona\Desktop\GitHub Action Testing\GitHub-Action-Testing\artifacts\models\random_forest_model.pkl
+2026-05-29 18:50:54,292 - training - INFO - Test accuracy: 0.9353
+2026-05-29 21:45:08,276 - training - INFO - ======================================================================
+2026-05-29 21:45:08,277 - training - INFO - TRAINING RANDOM FOREST OBESITY CLASSIFIER
+2026-05-29 21:45:08,277 - training - INFO - ======================================================================
+2026-05-29 21:45:08,316 - training - INFO - Loaded X_train=(1477, 15) y_train=(1477,)
+2026-05-29 21:45:08,316 - training - INFO - Loaded X_test=(634, 15) y_test=(634,)
+2026-05-29 21:45:08,317 - training - INFO - Fitting Random Forest model
+2026-05-29 21:45:08,829 - training - INFO - Saved model to C:\Users\leona\Desktop\GitHub Action Testing\GitHub-Action-Testing\artifacts\models\random_forest_model.pkl
+2026-05-29 21:45:08,829 - training - INFO - Test accuracy: 0.9353
